@@ -118,8 +118,8 @@ nav{
 /* 메인 포터 */
 
 .mainPhoto > img{
-    height: 1000px;
-    width: 80%;
+    height: 800px;
+    width: 50%;
     
 }
 
@@ -155,7 +155,6 @@ nav{
 }
 
 
-
 #tabMenu label:hover{
     color: #222;
     cursor:pointer
@@ -169,20 +168,20 @@ nav{
 
 .tabContent{
     display: none;
-    padding: 20px 0 0;
+    padding: 50px 0 0;
     border-top: 1px solid #ddd;
 }
 
-.tabContent h2{
+/* .tabContent h2{
     display: none;
-}
+} */
 
 #notice ul{
     list-style: disc;
     margin-left: 30px;
 }
 
-#notice ul{
+#notice ul li{
     font-size: 16px;
     line-height: 2.5;
 }
@@ -191,7 +190,7 @@ nav{
     display: inline;
 }
 
-#tab1:checked ~ #notice
+#tab1:checked ~ #notice,
 #tab2:checked ~ #gallery{
     display: block;
 }
@@ -226,7 +225,7 @@ nav{
     background-image: url(~~~~~~);
 }
 
-#links ul a p{
+#links ul li a p{
     margin-top: 15px;
     font-weight: 600;
     color: #666;
@@ -267,6 +266,7 @@ footer{
 
 #sns{
     position: absolute;
+    right: 0;
 }
 
 #sns ul li{
