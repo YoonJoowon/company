@@ -20,8 +20,15 @@
             </a>
         </div>
                 <nav>
+                    <ul id="topMenu2">
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">여행약관</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+
                     <ul id="topMenu">
-                            <li><a href="#">회사 소개<span> !</span></a>
+                            <li><a href="#">회사소개<span> !</span></a>
                                 <ul>
                                     <li><a href="#">회사 조직도</a></li>
                                     <li><a href="#">회사 위치</a></li>
@@ -56,10 +63,13 @@
                             <li><a href="#">문의하기</a></li>
                     </ul>
                 </nav>
+
         </header>
    
         <div class="mainPhoto">
+            <div id="ball"></div>
             <img src="ayu.jpg" alt="">
+            <div id="box">안녕!</div>
         </div>
    
         <div id="contents">
@@ -105,18 +115,18 @@
 
                 <footer>
                     <div id="bottomMenu">
-                            <u>
+                            <ul>
                                 <li><a href="#">회사 소개</a></li>
                                 <li><a href="#">개인정보처리방침</a></li>
                                 <li><a href="#">여행약관</a></li>
                                 <li><a href="#">사이트맵</a></li>
-                            </u>
+                            </ul>
 
                         <div id="sns">
                             <ul>
-                                <li><a href="#"><img src="1.jpg" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="1.jpg" alt=""></a></li>
                                 <li><a href="#"><img src="4.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="6.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="6.jpg" alt=""></a></li> -->
                             </ul>
                         </div>
                     </div>
@@ -127,5 +137,93 @@
                 </footer>
              </div>
         </div>
+
+
+        <script>
+            for(let i = 0; i<5; i++){
+                    for(let j = 0; j<5; j++){
+                    document.write('*');
+                }
+                document.write('<br>');
+            } 
+    
+            document.write('<br>')
+    
+    
+            for(let i = 0; i<5; i++){
+                    for(let j = 0; j<=i; j++){
+                    document.write('*');
+                }
+                document.write('<br>');
+            }
+    
+            document.write('<br>')
+    
+    
+            for(let i = 0; i<5; i++){
+                    for(let j = 4; j>i; j--){
+                    document.write('&nbsp');
+                }
+                for(let j = 0; j <= i; j++){
+                    document.write('*');
+                }
+                document.write('<br>');
+            }
+    
+            document.write('<br>')
+    
+    
+            for(let i = 0; i<5; i++){
+                    for(let j = 5; j>i; j--){
+                    document.write('*');
+                }
+                document.write('<br>');
+            }   
+    
+    
+            document.write('<br>')
+    
+            for(let i = 0; i<5; i++){
+                    for(let j = 0; j<i; j++){
+                        document.write('&nbsp')
+                    }
+                    for(let j=5; j>i; j--){
+                        document.write('*')
+                    }
+                    document.write('<br>')
+            }
+    
+            document.write('<br>')
+    
+            for(let i = 0; i<5; i++){
+                    for(let j=4; j>i; j--){
+                        document.write('&nbsp')
+                    }
+                    for(let j=0; j<=i; j++){
+                        document.write('*')
+                    }
+                    for(let j=0; j<i; j++){
+                        document.write('*')
+                    }
+                document.write('<br>')
+            }
+    
+            document.write('<br>')
+    
+            for(let i = 0; i<5; i++){
+                    for(let j=0; j<i; j++){
+                        document.write('&nbsp')
+                    }
+                    for(let j=4; j>=i; j--){
+                        document.write('*')
+                    }
+                    for(let j=4; j>i; j--){
+                        document.write('*')
+                    }
+                document.write('<br>')
+            }
+    
+            document.write('<br>')
+        </script>
 </body>
 </html>

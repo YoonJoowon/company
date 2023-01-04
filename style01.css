@@ -51,7 +51,6 @@ header{
     font-size: 10px;
     color: rgb(205, 205, 205);
     /* text-shadow: 0 -1px 0 rgb(121, 121, 121); */
-    padding-top: -20px;
 }
 
 nav{
@@ -115,12 +114,91 @@ nav{
     color: #000;
 }
 
+/* top2 */
+
+#topMenu2{
+    width: 50%;
+    height: 0px;
+    position: relative;
+    left: 60%;
+}
+
+#topMenu2 ul{
+    margin-top: 15px;
+}
+
+#topMenu2 ul{
+    float:left;
+    padding:5px 20px;
+    border-right: 1px solid #ddd;
+}
+
+#topMenu2 ul li:last-child{
+    border: none;
+}
+
+#topMenu2 ul li a, #bottomMenu ul li a:visited {
+    font-size: 15px;
+    color: #666;
+}
+
 /* 메인 포터 */
 
 .mainPhoto > img{
-    height: 800px;
-    width: 50%;
-    
+    height: 80%;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+
+#ball{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 153, 0);
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+    animation: movingball 1s ease-in infinite alternate;
+}
+
+#ball > a:hover{
+    color: #07c;
+}
+
+@keyframes movingball{
+    0%{
+        top: 200px;
+    }
+    90%{
+        width: 100px;
+    }
+    to{
+        top: 600px;
+        width: 150px;
+        height: 90px;
+    }
+}
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    position: absolute;
+    left:100px;
+    text-align: center;
+    color: #eee;
+
+    animation: movingbox 4s ease-in infinite alternate;
+}
+
+@keyframes movingbox {
+    0%{
+        left:10%;
+    }
+    100%{
+        left: 90%;
+    }            
 }
 
 /* 탭 메뉴와 퀵 링크 */
