@@ -24,7 +24,7 @@ ul{
 header{
     width: 100%;
     height: 100px;
-    background-color: rgb(88, 144, 59);
+    background-color: rgb(255, 255, 255);
     display: flex;
     position: fixed;
 }
@@ -42,7 +42,8 @@ header{
     font-weight: 600;
     font-size: 40px;
     color: rgb(18, 34, 16);
-    text-shadow: 0 -1px 0 rgb(121, 121, 121);
+    text-shadow: -2px -4px 2px rgb(174, 174, 174);
+    padding-left: 400px;
 }
 
 #logo h6{
@@ -53,28 +54,33 @@ header{
     /* text-shadow: 0 -1px 0 rgb(121, 121, 121); */
 }
 
-nav{
+/* nav{
     width: 2000px;
     height: 50px;
     padding-top: 40px;
     padding-left: 100px;    
-}
+} */
 
 #topMenu {
     height: 60px;
+    padding-left: 600px;
 }
 
 #topMenu > li {
     float:left;
     position: relative;
+    padding-left: 10px;
+    padding-top: 30px;
 }
 
 #topMenu > li > a{
     display:block;
-    color: #fff;
-    font-weight: 600;
-    text-shadow: 0 1px #07c;
-    padding: 20px 60px;
+    color: rgba(0, 0, 0, 0.498);
+    font-weight: 500;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.45);
+    padding: 10px 0px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 #topMenu > li > span{
@@ -82,8 +88,8 @@ nav{
 }
 
 #topMenu > li > a:hover{
-    color: #000;
-    text-shadow: 0 1px #07c;
+    color: rgb(200, 200, 200);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.273);
 }
 
 #topMenu > li > ul{
@@ -147,12 +153,32 @@ nav{
 .mainPhoto > img{
     height: 80%;
     width: 70%;
-    display: block;
-    margin: auto;
+    /* display: block; */
+    margin: 0px auto;
+    float: left;
+    padding-left: 10px;
+}
+
+.Photo1 > img{
+    height: 29%;
+    width: 29%;
+    float: right;
+    padding-right: 10px;
+    /* display: block;
+    margin: auto; */
+}
+
+.Photo3 > img{
+    height: 585px;
+    width: 550px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 10px;
 }
 
 
-#ball{
+
+/* #ball{
     width: 100px;
     height: 100px;
     background-color: rgb(255, 153, 0);
@@ -199,23 +225,23 @@ nav{
     100%{
         left: 90%;
     }            
-}
+} */
 
 /* 탭 메뉴와 퀵 링크 */
 
 #contents{
     width: 100%;
     height: 450px;
-    margin-top: 450px;
+    margin-top: 500px;
     overflow: hidden;
 }
 
 /* 탭메뉴  */
 #tabMenu{
     float: left;
-    width:85%;
+    width:100%;
     height:100%;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 #tabMenu input[type="radio"]{
@@ -234,15 +260,17 @@ nav{
 
 
 #tabMenu label:hover{
-    color: #222;
+    color: rgb(96, 96, 96);
     cursor:pointer
 }
 
 #tabMenu input:checked + label{
-    color: #b00;
+    color: rgb(30, 30, 30);
     border: 1px solid #ddd;
     background-color: #eee;    
 }
+
+/* 공지사항과 갤러리 */
 
 .tabContent{
     display: none;
@@ -250,13 +278,15 @@ nav{
     border-top: 1px solid #ddd;
 }
 
-/* .tabContent h2{
-    display: none;
-} */
+.tabContent h2{
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
 
 #notice ul{
     list-style: disc;
     margin-left: 30px;
+    padding-top: 0px;
 }
 
 #notice ul li{
@@ -264,9 +294,10 @@ nav{
     line-height: 2.5;
 }
 
-#gallery ul li{
-    display: inline;
-}
+/* #gallery h2{
+        height: 2px;
+        float: left;
+} */
 
 #tab1:checked ~ #notice,
 #tab2:checked ~ #gallery{
@@ -295,16 +326,28 @@ nav{
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    border: 1px solid #ddd;
+    border: 3px solid rgb(141, 141, 141);
     line-height: 150px;
 }
 
-#quick-icon3 {
-    background-image: url(~~~~~~);
+#profile{
+    background-image: url('../company/6.jpg');
+    background-size: cover;
 }
+
+
+/* #profile {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: block;
+    margin: 0px auto;
+    float: right;
+} */
 
 #links ul li a p{
     margin-top: 15px;
+    margin-left: 45px;
     font-weight: 600;
     color: #666;
 }
@@ -314,7 +357,7 @@ nav{
 footer{
     width: 100%;
     height: 100%;
-    border-top: 2px solid #222;
+    border-top: 1.8px solid #222;
 }
 
 #bottomMenu{
@@ -354,11 +397,12 @@ footer{
 
 #company{
     clear: left;
-    margin-top: 100px;
+    padding-top: 0px;
     margin-left: 20px;
 }
 
 p{
     font-size: 14px;
     color: #aaa;
+    float: left;
 }
