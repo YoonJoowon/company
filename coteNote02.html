@@ -45,15 +45,48 @@
             }
         }
         
-        //
+        //편지 몇글자인지
+        function solution(message) {
+            return message.length*2
+        }
+        //점의 위치 구하기
+        function solution(dot) {
 
-        //
+        if(dot[0] < 0 && dot[1] <0){
+            return 3
+        };
+        if(dot[0] < 0 && dot[1] >0){
+            return 2
+        }
+        if(dot[0] > 0 && dot[1] <0){
+            return 4
+        }
+        return 1
+        }
 
-        //
+        //문자열 뒤집기
+        function solution(my_string) {
+            var answer = my_string.split('').reverse('').join('');
+            return answer;
+        }
 
-        //
 
-        //
+        //최댓값 만들기
+        function solution(numbers) {
+            numbers.sort((a, b)=> b -a );
+            
+            var answer = numbers[0]*numbers[1];
+        
+            return answer;
+        }
+
+
+        //특정문자 모두 제거
+        function solution(my_string, letter) {
+            var answer = my_string.replaceAll(letter, '');
+            return answer;
+        }
+
 
     </script>
 
