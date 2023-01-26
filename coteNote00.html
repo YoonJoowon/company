@@ -1,7 +1,6 @@
 몫, 몬트? : ~(a/b)
 나머지 : a%b
 제곱 : **
-정수 : Math.floor(a)
 반환값에 더하기 : answer += i
 리턴값에 (배열) 더하기 : answer.push(i)
 반환값에 하나씩 더하기 : answer ++
@@ -13,16 +12,19 @@
 소수점 하반올림 : Math.round()
 그리고 : &&
 문자열 뒤집기 : string.split('').reverse('').join('')
-내림차순배열 : sort((a, b)= > ba)
+내림차순배열 : arr.sort((a, b)= > b-a)
 특정전부제거 : replaceAll('' , '')
 숫자를문자열로 : String()
 문자를순자열로 : Number()
 배열로쪼개기 : split('')
 같은값 더하기 : reduce((a,b)= > a+b, 0)
-배열안내용모두선택 : /[]/g ----- 0~9 모두선택 [0-9]
+배열안내용모두선택 : array.match(/[]/g, '') ----- 0~9 모두선택 [^0-9]
 김속문자찾기 : .match()
 특정값지정 : .map()
 걸러내기 : .filter()
+대소문자변경 : toUpperCase() , toLowerCase()
+지정된 인덱스 반환 : charAt()
+배열 원소쪼개서 리턴  : [...array]
 
 
 1. map

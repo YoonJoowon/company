@@ -70,10 +70,21 @@
             return arr.join("");
         }
 
-        //
+        //주사위의 개수
+        function solution(box, n) {
+            let answer = Math.floor((box[0]/n))*Math.floor((box[1]/n))*Math.floor((box[2]/n))
+            return answer;
+        }
         
-        //
-        
+        //문자열 정렬하기
+        function solution(my_string) {
+            var answer = [];
+            
+            answer = my_string.match(/[0-9]/g).map(Number).sort((a,b)=>a-b)
+
+            return answer;
+        }
+
         //
         
         //
