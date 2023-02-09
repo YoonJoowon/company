@@ -28,3 +28,17 @@
         return count;
     }
     naiveSearch("lorie loled", "pop")
+
+// 버블 정렬
+
+    // 기본 내장 자바스크립트 정렬
+
+    function numberCompare(num1, num2){
+        return num2 - num1;
+    }
+    [6, 4, 15, 10].sort(numberCompare);
+
+    function compareByLen(srt1, str2){
+        return str2.length - srt1.length;
+    }
+    ["Steele", "Colt", "Data Structures", "Algorithms"].sort(compareByLen)
