@@ -1,6 +1,4 @@
-// 버블 정렬
-
-    // 선택정렬
+// 선택정렬
 
     function selectionSort(arr){
         for(var i = 0; i < arr.length; i++){
@@ -20,7 +18,7 @@
     }
     selectionSort([34,22,10,19,17]);
 
-    
+
     function selectionSort(arr){
         const swap = (arr, idx1, idx2) =>
         ([arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]])
