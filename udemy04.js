@@ -1,6 +1,7 @@
 // 버블 정렬
 
     // 기본 내장 자바스크립트 정렬
+    // - 그냥 기본 정렬이라고 보면 됨
 
     function numberCompare(num1, num2){
         return num2 - num1;
@@ -30,6 +31,7 @@
         return arr;
     }
 
+    // noSwap 변수 추가
     function bubbleSort(arr) {
         let noSwap;
         for (var i = arr.length; i > 0; i--) {

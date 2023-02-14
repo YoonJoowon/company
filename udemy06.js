@@ -1,6 +1,7 @@
 // 삽입정렬
     
     // 구현
+    // 기존의 [1,2,3,4,5,6] 처럼 다 정렬되고 새로운 항목이 들어와서 정렬 될 때 유리함
     function insertionSort(arr){
         for(var i = 1; i < arr.length; i++){
             var currentVal = arr[i];

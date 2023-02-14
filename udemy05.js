@@ -1,5 +1,7 @@
 // 선택정렬
 
+    // 구현
+    // 메모리에 쓰는 것을 고려하거나 실제 스왑을 수행하는 것을 고려하는 경우 용이 (가끔 쓰임 - 한 숫자를 끝까지 가져가기 때문)
     function selectionSort(arr){
         for(var i = 0; i < arr.length; i++){
             var lowest = i;
